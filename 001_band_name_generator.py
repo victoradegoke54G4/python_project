@@ -1,4 +1,5 @@
 #greet user
+print('Welcome To The Group Name Generator.')
 userName = input(' What is your name?: ')
 print(f'Hello {userName}, welcome.\nLet\'s get you a group name. ')
 
