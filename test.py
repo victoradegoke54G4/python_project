@@ -78,3 +78,9 @@
 #     print(dot_counter)
 
 # display_info(10)
+
+
+
+x = 1
+
+print(x != 1)
