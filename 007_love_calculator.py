@@ -9,16 +9,18 @@ class Lovecalc():
 
 
     def lovecalc(self):
-
-        combined_name = (self.userName + self.loverName).strip().lower()
-
-        for char in combined_name:
-            if char in 'true':
-                self.true_count += 1
-            if char in 'love':
-                self.love_count += 1
-
-        return str(self.true_count) + str(self.love_count)
+        try:
+            combined_name = (self.userName + self.loverName).strip().lower()
+        except TypeError:
+            print('Invalid Input!')
+        else:    
+            for char in combined_name:
+                if char in 'true':
+                    self.true_count += 1
+                if char in 'love':
+                    self.love_count += 1
+        finally:
+            return str(self.true_count) + str(self.love_count)
 
 
 #   user interface
@@ -32,5 +34,6 @@ def main():
     calc_result = result.lovecalc()
     
     print(f'Your love score is {calc_result}')
+    
 
 main()

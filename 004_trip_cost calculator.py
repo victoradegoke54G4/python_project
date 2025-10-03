@@ -10,21 +10,29 @@ class TripCostCalculator:
         return (self.days * self.cost_per_night) + self.flight_cost + self.car_rental + self.other
 
 
+def get_float(prompt):
+    '''Converts type to float with exception handling'''
+    try:
+        return float(input((prompt)))
+    except ValueError:
+        print('Invalid Input!')
+
+
 def main():
     print('Welcome To The Ultimate Trip Cost Calculator App')
 
     # user input
-    trip_days = float(input('How many days is your trip going to last?: '))
-    trip_cost = float(input('How much does your trip cost per night?: '))
-    trip_flight_cost = float(input('How much does your flight cost to destination?: '))
+    trip_days = get_float('How many days is your trip going to last?: ')
+    trip_cost = get_float('How much does your trip cost per night?: ')
+    trip_flight_cost = get_float('How much does your flight cost to destination?: ')
 
     trip_car_rental_cost = 0
     if input('Do you need a car rental? y/n: ').lower() == 'y':
-        trip_car_rental_cost = float(input('How much does the car rental cost?: '))
+        trip_car_rental_cost = get_float('How much does the car rental cost?: ')
 
     trip_other_cost = 0
     if input('Do you have other expenses? y/n: ').lower() == 'y':
-        trip_other_cost = float(input('How much other costs?: '))
+        trip_other_cost = get_float('How much other costs?: ')
 
     # create object
     calculator = TripCostCalculator(trip_days, trip_cost, trip_flight_cost, trip_car_rental_cost, trip_other_cost)

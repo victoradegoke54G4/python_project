@@ -6,18 +6,32 @@ class BMI:
         self.weight = weight
 
     def bmi_calc(self):
-        bmi_calc = round((self.weight / (self.height **2)), 2)
-        return bmi_calc
+        try:
+            bmi_calc = round((self.weight / (self.height **2)), 2)
+        except ZeroDivisionError:
+            return('Check Your Height Input')
+        else:
+            return bmi_calc
     
+
+def get_float(prompt):
+    '''Converts type to float with exception handling'''
+    try:
+        return float(input(prompt))
+    except ValueError:
+        print('Invalid Input!')
+        quit()
+
 
 #user interface
 def main():
+    '''Allows User Interaction With Code'''
 
 #user input
     print('Welcome to the Ultimate BMI Calculator.')
 
-    userWeight = float(input('Enter your weight in kg: '))
-    userHeight = float(input('Enter your height in m: '))
+    userWeight = get_float('Enter your weight in kg: ')
+    userHeight = get_float('Enter your height in m: ')
 
     person = BMI(userHeight, userWeight)
     bmi = person.bmi_calc()
@@ -38,5 +52,5 @@ def main():
 
     else:
         print('Check your Input')
-
+        quit()
 main()
