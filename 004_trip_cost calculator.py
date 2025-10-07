@@ -12,10 +12,11 @@ class TripCostCalculator:
 
 def get_float(prompt):
     '''Converts type to float with exception handling'''
-    try:
-        return float(input((prompt)))
-    except ValueError:
-        print('Invalid Input!')
+    while True:
+        try:
+            return float(input((prompt)))
+        except ValueError:
+            print('Invalid Input!')
 
 
 def main():

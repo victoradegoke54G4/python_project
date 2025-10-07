@@ -25,14 +25,15 @@ def get_choice(prompt, options):
 
 def get_float(prompt):
     '''Converts type to float with exception handling'''
-    try:
-        return float(input(prompt))
-    except ValueError:
-        print('Input Correct Value.')
-        quit()
-    except TypeError:   
-        print('Check Type Input.')
-        quit()
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print('Input Correct Value.')
+            # quit()b
+        except TypeError:   
+            print('Check Type Input.')
+            # quit()
 
 #user's interface
 def main(): 

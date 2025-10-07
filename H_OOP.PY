@@ -7,8 +7,6 @@ class BioData:
     self.height = height
     self.weight = weight
 
-import request
-
 def sleep(self):
   print('{} is sleeping on the bed.'.format(self.name))
 

@@ -16,11 +16,12 @@ class BMI:
 
 def get_float(prompt):
     '''Converts type to float with exception handling'''
-    try:
-        return float(input(prompt))
-    except ValueError:
-        print('Invalid Input!')
-        quit()
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print('Invalid Input!')
+            quit()
 
 
 #user interface

@@ -1,2 +1,2 @@
 # python_project
-This project contains all projects I learned while practicing python as a beginner.
+This project contains all simple python projects to navigate you during your process of learning python as a beginner.

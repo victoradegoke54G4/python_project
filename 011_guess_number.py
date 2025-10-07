@@ -5,6 +5,7 @@ def get_int(prompt):
     # if not prompt or not isinstance(prompt, str):
     #      print('Check Input')
     # else:
+    while True:
         try:
             return int(input(prompt))
         

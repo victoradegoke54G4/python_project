@@ -1,11 +1,12 @@
 
 def get_float(prompt):
-    try:
-        return float(input(prompt))
-    except ValueError:
-        print('Invalid Value.')
-    except TypeError:
-        print('Check Type Input.')
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print('Invalid Value.')
+        except TypeError:
+            print('Check Type Input.')
 
 def main():
     '''Allows user to interact with code'''

@@ -1,10 +1,11 @@
 
 def get_int(prompt):
     '''Converts string type to float with exception handling'''
-    try:
-        return int(float(input(prompt)))
-    except ValueError:
-        print('Invalid Input')
+    while True:
+        try:
+            return int(float(input(prompt)))
+        except ValueError:
+            print('Invalid Input')
 
 
 def main():
