@@ -1,4 +1,7 @@
 
+from typing import LiteralString
+from ceasar_ascii_logo import logo
+
 class Ceasar_Cipher:
     def __init__(self, p_message, p_shift):
         self.message = p_message.upper()
@@ -15,7 +18,7 @@ class Ceasar_Cipher:
             cipher +=new_char
         return 'The encrypted message is {}. '. format(cipher)
 
-    def decryption(self):
+    def decryption(self) -> LiteralString:
         decipher =''
         for char in self.message:
             position = self.alphabet.index(char)
@@ -36,6 +39,7 @@ def getint(prompt):
 # create user interface
 def main():
     '''allows user to interact with the app'''
+    print(logo)
     #create object
     while True:
         encrypt_decryptInput = input('Type \'E\' to encrypt and \'D\' to decrypt message: ').upper()
@@ -61,5 +65,6 @@ def main():
             if exit_messageInput == 'N':
                 break
     print('Thank You For Using The App.')
-    
-main()
+
+if __name__ == '__main__':
+        main()

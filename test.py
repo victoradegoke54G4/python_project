@@ -161,6 +161,8 @@
 
 # main()   
 
+# ❌
+
 """" SIMULTANEOUS COUNT, SUM AND AVERAGE OF INPUT NUMBERS"""""
 
 # def main():
@@ -180,3 +182,116 @@
 #     print('Average is {}'.format(num/count))
 
 # main()
+
+
+
+
+# alphabet = ('A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z').split(',')
+# for alphabet in alphabet[::-1]:
+# print(alphabet)
+# message = 'c','b'
+# shift = 1
+
+# cipher = ''
+# for char in  message:
+#     position= alphabet.index(char)
+#     new_position = position + shift
+#     new_char = alphabet[new_position]
+#     cipher +=new_char
+# print('The encrypted message is {}. '. format(cipher))
+
+
+#     print(alphabet)
+
+
+
+
+# class SafeInput:
+#     @staticmethod
+#     def get_int(prompt, min_val=None, max_val=None):
+#         while True:
+#             try:
+#                 val = int(input(prompt))
+#                 if (min_val and val < min_val) or (max_val and val > max_val):
+#                     print(f"Enter a number between {min_val} and {max_val}.")
+#                     continue
+#                 return val
+#             except ValueError:
+#                 print("Enter a valid integer.")
+
+#     @staticmethod
+#     def get_choice(prompt, options):
+#         while True:
+#             val = input(prompt).strip().lower()
+#             if val in [str(o).lower() for o in options]:
+#                 return val
+#             print(f"Choose from: {', '.join(map(str, options))}")
+# SafeInput()
+
+# def safe_yes_no(prompt):
+#     while True:
+#         choice = input(prompt + " (y/n): ").strip().lower()
+#         if choice in ['y', 'yes']:
+#             return True
+#         elif choice in ['n', 'no']:
+#             return False
+#         print("❌ Please enter 'y' or 'n'.")
+
+
+
+# def safe_number(prompt, number_type=int, min_val=None, max_val=None):
+#     while True:
+#         try:
+#             value = number_type(input(prompt))
+#             if (min_val is not None and value < min_val) or (max_val is not None and value > max_val):
+#                 print(f"Enter a number between {min_val} and {max_val}.")
+#                 continue
+#             return value
+#         except ValueError:
+#             print("❌ Please enter a valid {}.".format(number_type.__name__))
+
+
+
+# def safe_choice(prompt,options):
+#     while True:
+#         choice = input(prompt).strip().lower()
+      # for option in options:                                      # if choice in [str(opt).lower() for opt in options]:
+#             if choice in str(option).lower().strip():
+#                 return choice
+#         print(f'Invalid Choice.{', '.join(map(str,options))}')
+
+# while True:
+#       d =safe_yes_no('> ')
+#       if d:
+#           continue
+#       else:
+#           print('ttttt')
+#           break
+#       # print(safe_yes_no('> '))
+
+
+# d =[0,1,2,3]
+# e =[0,1,2,3]
+# for ds in d:
+#       for es in e:
+#             es+=1
+#             print(es, end = ' ')
+
+#       print()
+
+# d= [es for es in range(4)]
+# print(d)
+
+for row in range(3):  
+      for column in range(5):
+            column +=1
+            print(column, end = ' ')
+      print()
+# ''' for every row in range 3 (0,1,2) each row number 0 would be substituted with 1 2 3 from column vice versa for num of rows 2,3'''
+
+# for row in range(3):
+#     print('1'+' '+'2'+' '+ '3')
+
+
+# print('ab', end=' ')
+# print('bc')
