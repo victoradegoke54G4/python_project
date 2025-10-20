@@ -1,5 +1,4 @@
 
-from typing import LiteralString
 from ceasar_ascii_logo import logo
 
 class Ceasar_Cipher:
@@ -18,7 +17,7 @@ class Ceasar_Cipher:
             cipher +=new_char
         return 'The encrypted message is {}. '. format(cipher)
 
-    def decryption(self) -> LiteralString:
+    def decryption(self) :
         decipher =''
         for char in self.message:
             position = self.alphabet.index(char)
@@ -42,7 +41,7 @@ def main():
     print(logo)
     #create object
     while True:
-        encrypt_decryptInput = input('Type \'E\' to encrypt and \'D\' to decrypt message: ').upper()
+        encrypt_decryptInput = input('\nType \'E\' to encrypt and \'D\' to decrypt message: ').upper()
         if not encrypt_decryptInput or not encrypt_decryptInput.isalpha():
                 print('Check Input')
         else:

@@ -1,4 +1,5 @@
-#
+from ascii_art import logo
+
 class BlindAuction:
     def __init__(self):
         self.bidderdetails = {}
@@ -45,9 +46,10 @@ class BlindAuction:
 
 
 def main():
+    print(logo)
     bid = BlindAuction()
     while True:
-        bidderNameInput = bid.get_name("\nEnter your name: ".title())
+        bidderNameInput = bid.get_name("Enter your name: ".title())
         bidderAmountInput = bid.get_int("Enter Amount: ".title())
         bid.get_bidderDetails(bidderNameInput, bidderAmountInput)
         anyOtherBidder_input = bid.get_yes_no("Is there any other bidder ".title())

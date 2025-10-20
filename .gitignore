@@ -1,0 +1,57 @@
+# === PYTHON CACHE / BUILD ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+develop-eggs/
+.eggs/
+
+# === VIRTUAL ENVIRONMENTS ===
+env/
+venv/
+ENV/
+.venv/
+venv.bak/
+
+# === LOGS & DATABASE FILES ===
+*.log
+*.sqlite3
+*.db
+
+# === TESTING & COVERAGE ===
+.coverage
+*.cover
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+.test.py
+.testdebug.py
+
+# === SYSTEM / EDITOR FILES ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === ENVIRONMENT VARIABLES / KEYS ===
+.env
+.env.*
+config.json
+secrets.json
+
+# === JUPYTER NOTEBOOK CHECKPOINTS ===
+.ipynb_checkpoints/
+
+# === TEMPORARY FILES ===
+tmp/
+temp/
+*.bak
+*.tmp
