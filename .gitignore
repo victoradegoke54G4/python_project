@@ -55,3 +55,7 @@ tmp/
 temp/
 *.bak
 *.tmp
+
+
+#=============my files========
+024_powerball_game/
