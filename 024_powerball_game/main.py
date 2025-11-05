@@ -50,7 +50,7 @@ def main():
             print('Please enter a number between 1 and 26.')
             continue
         break
-
+  
     # Ask number of plays
     while True:
         numberOfPlays = get_int('How many times would you like to play? (1 to 1,000,000): ')
