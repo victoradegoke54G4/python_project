@@ -27,7 +27,6 @@ Each file is a standalone project demonstrating different programming concepts, 
 | `016_Ceasar's_cipher.py` | Caesar cipher encryption/decryption. |
 | `ATM.PY` | ATM simulator (deposit, withdraw etc.). |
 | `H_OOP.PY` | Examples using object-oriented programming. |
-| `test.py` | Scratch / experimental file. |
 
 ---
 
@@ -48,6 +47,7 @@ Each file is a standalone project demonstrating different programming concepts, 
    ```bash
    git clone https://github.com/victoradegoke54G4/python_project.git
    cd python_project
+
 
 
 
