@@ -34,7 +34,7 @@ def main():
             break
 
         if len(user_input) < 8:
-            print('❌ Password must be at least 8 characters long.')
+            print('Password must be at least 8 characters long.')
             continue
 
         if password_detector(user_input):    

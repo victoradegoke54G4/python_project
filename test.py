@@ -703,9 +703,39 @@
 # print(employee1.get_salary())
     
 
-def process_arr(arr, i=0):
-    if i == len(arr): return process(arr[i])
-    process_arr(arr, i+1)
+# def process_arr(arr, i=0):
+#     if i == len(arr): return process(arr[i])
+#     process_arr(arr, i+1)
+
+# import chardet
+# with open(file_name, 'rb' ) as f:
+#       raw =f.read()
+#       encoding = chardet.detect(raw)['encoding']
 
 
 
+# from openpyxl import load_workbook, Workbook
+
+# # Load your Excel file
+# wb = load_workbook("031_transpose_excel_\sample_data.xlsx")
+# ws = wb.active  # use the active sheet
+
+# # Read all data into a list of lists
+# data = []
+# for row in ws.iter_rows(values_only=True):
+#     data.append(list(row))
+
+# # Transpose the data (swap rows and columns)
+# transposed_data = list(zip(*data))
+# # Create a new workbook or sheet to save the result
+# new_wb = Workbook()
+# new_ws = new_wb.active
+
+# # Write transposed data into new sheet
+# for row in transposed_data:
+#     new_ws.append(row)
+
+# # Save the new Excel file
+# new_wb.save("transposed_file.xlsx")
+
+# print("✅ Transposition complete! Saved as 'transposed_file.xlsx'")
