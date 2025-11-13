@@ -16,6 +16,7 @@ env/
 venv/
 ENV/
 .venv/
+.venv-1/
 venv.bak/
 
 # === LOGS & DATABASE FILES ===
@@ -60,3 +61,6 @@ temp/
 #=============my files========
 024_powerball_game/
 029_country_quiz_file_manipulation/
+
+test.py
+testdebug.py
