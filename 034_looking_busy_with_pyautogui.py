@@ -15,5 +15,6 @@ def looking_busy(is_meeting = True):
             is_meeting = False
 
     print('You are out of business.')
+    
 if __name__ == '__main__':
     looking_busy()
