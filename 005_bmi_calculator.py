@@ -8,8 +8,9 @@ class BMI:
     def bmi_calc(self):
         try:
             bmi_calc = round((self.weight / (self.height **2)), 2)
+
         except ZeroDivisionError:
-            return('Check Your Height Input')
+            print('Check Your Height Input')
         else:
             return bmi_calc
     

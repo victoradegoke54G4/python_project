@@ -54,8 +54,10 @@ def main():
     cart = ShoppingCart()
     print('\n==== WELCOME TO WALMART ====')
     print('> ADD ITEMS TO YOUR CART\n')
+
     for index, parts in enumerate(cart.available_parts, 1):
         print('{}.{}'.format(str(index),parts.upper().strip()))
+        
     chosen_list = []
     while True:
         userInput = get_choice('\nWhat would you like to add to your cart?: '.title(), ['1','2','3','4','5','6','7'])

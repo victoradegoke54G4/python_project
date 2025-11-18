@@ -30,10 +30,9 @@ def get_float(prompt):
             return float(input(prompt))
         except ValueError:
             print('Input Correct Value.')
-            # quit()b
+            
         except TypeError:   
             print('Check Type Input.')
-            # quit()
 
 #user's interface
 def main(): 

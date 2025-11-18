@@ -25,8 +25,7 @@ def main ():
     random.shuffle(password_list)
     # print(f'Your password is: {password_list}')
 
-    for apc in password_list:
-        adv_password = ' , '.join(password_list)
+    adv_password = ' , '.join(password_list)
 
     print(f'Your advanced password is: {adv_password}')
 

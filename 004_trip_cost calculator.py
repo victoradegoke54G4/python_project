@@ -1,5 +1,5 @@
 class TripCostCalculator:
-    def __init__(self, days, cost_per_night, flight_cost, car_rental=0, other=0):
+    def __init__(self, days, cost_per_night, flight_cost, car_rental, other):
         self.days = days
         self.cost_per_night = cost_per_night
         self.flight_cost = flight_cost

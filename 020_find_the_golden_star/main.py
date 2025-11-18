@@ -54,7 +54,7 @@ def main():
 
         # ask user to play again or quit
         play_again = input('\nWould you like to play again? (Y/N): ').lower()
-        if play_again != 'y':
+        if play_again == 'n':
             print('\nThanks for playing! See you next time ')
             break
 
